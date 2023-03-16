@@ -343,14 +343,67 @@ footer p {
     color: #C3CBCD;
 }
 
+@media (max-width: 1110px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section01 .img-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section03 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section03 .left-box {
+        margin-right: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .section03 .right-box {
+        width: 80%;
+    }
+
+    .section04 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .section04 .left-box {
+        margin-bottom: 80px;
+        width: 60%;
+    }
+
+    .section04 .right-box {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .section04 .right-box img {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 768px) {
     header {
         padding: 40px;
     }
 
+    header nav {
+        display: none;
+    }
+
     .section01 {
-        padding: 80px 0;
+        padding: 100px 0;
     }
 
     .section01 .container {
@@ -359,7 +412,7 @@ footer p {
         align-items: center;
     }
 
-    .section01 .container .txt-box {
+    .section01 .txt-box {
         margin-right: 0;
         margin-bottom: 50px;
         text-align: center;
@@ -375,13 +428,13 @@ footer p {
         align-items: center;
     }
 
-    .section03 .container .left-box {
+    .section03 .left-box {
         margin-right: 0;
         margin-bottom: 50px;
         text-align: center;
     }
 
-    .section03 .container .right-box {
+    .section03 .right-box {
         width: 90%;
     }
 
@@ -392,7 +445,7 @@ footer p {
         padding: 20px 0;
     }
 
-    .section04 .container .left-box {
+    .section04 .left-box {
         margin-bottom: 80px;
         width: 60%;
     }
@@ -401,7 +454,7 @@ footer p {
         text-align: center;
     }
 
-    .section04 .container .right-box img {
+    .section04 .right-box img {
         margin: auto;
         margin-bottom: 20px;
     }
@@ -426,14 +479,14 @@ footer p {
         align-items: center;
     }
 
-    .section01 .container .txt-box {
+    .section01 .txt-box {
         padding: 0 30px;
         margin-right: 0;
         margin-bottom: 50px;
         text-align: center;
     }
 
-    .section01 .container .img-box {
+    .section01 .img-box {
         width: 80%;
     }
 
@@ -441,13 +494,13 @@ footer p {
         padding: 0 40px;
     }
 
-    .section02 .container .list-group {
+    .section02 .list-group {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .section02 .container .list-group div {
+    .section02 .list-group div {
         width: 100%;
         margin-right: 0;
     }
@@ -459,7 +512,7 @@ footer p {
         padding: 80px 0;
     }
 
-    .section03 .container .left-box {
+    .section03 .left-box {
         width: 100%;
         padding: 0 30px;
         margin-right: 0;
@@ -467,7 +520,7 @@ footer p {
         text-align: center;
     }
 
-    .section03 .container .right-box {
+    .section03 .right-box {
         width: 90%;
     }
 
@@ -478,30 +531,30 @@ footer p {
         padding: 20px 0;
     }
 
-    .section04 .container .left-box {
+    .section04 .left-box {
         margin-right: 0;
         margin-bottom: 80px;
         width: 60%;
     }
 
-    .section04 .container .left-box img {
+    .section04 .left-box img {
         width: 100%;
         margin: auto;
     }
 
-    .section04 .container .right-box {
+    .section04 .right-box {
         width: 100%;
         text-align: center;
     }
 
-    .section04 .container .right-box div {
+    .section04 .right-box div {
         width: 100%;
         text-align: center;
         margin: auto;
         padding: 0 40px 40px 40px;
     }
 
-    .section04 .container .right-box div img {
+    .section04 .right-box div img {
         margin: auto;
         margin-bottom: 20px;
     }

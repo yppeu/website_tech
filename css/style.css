@@ -52,12 +52,19 @@ header nav a:not(:last-child) {
     color: #fff;
 }
 
+/* 모바일 */
+.m-menu-btn {
+    display: none;
+}
+
 /*==========================
 공통 container
 ============================*/
 .container {
-    max-width: 1110px;
+    max-width: 1150px;
     margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /*==========================
@@ -84,7 +91,7 @@ section01
 
 .section01 .txt-box h3 {
     font-size: 44px;
-    line-height: 56px;
+    line-height: 1.4;
     letter-spacing: 0.2px;
     color: #373F41;
     font-weight: 700;
@@ -113,7 +120,7 @@ section01
 .section01 .img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /*==========================
@@ -188,7 +195,8 @@ section03
 .section03 .container {
     display: flex;
     align-items: center;
-    padding: 138px 0;
+    padding-top: 138px;
+    padding-bottom: 138px;
 }
 
 .section03 .left-box {
@@ -240,7 +248,8 @@ section04
 .section04 .container {
     display: flex;
     align-items: center;
-    padding: 90px 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .section04 .left-box {
@@ -343,8 +352,8 @@ footer p {
     color: #C3CBCD;
 }
 
-@media (max-width: 1110px) {
-    .container {
+/* @media (max-width: 1110px) {
+.container {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -561,5 +570,181 @@ footer p {
 
     .section05 {
         padding: 40px;
+    }
+} */
+
+@media(max-width:1100px) {
+    .section01 .txt-box {
+        margin-right: 40px;
+    }
+
+    .section01 .txt-box h3 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .section01 .txt-box h3 br {
+        display: none;
+    }
+
+    .section03 .left-box {
+        margin-right: 40px;
+    }
+
+    .section03 .left-box h3 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .section03 .left-box h3 br {
+        display: none;
+    }
+
+    .section04 .container {}
+}
+
+@media(max-width:800px) {
+
+    header nav,
+    header .login-bt {
+        display: none;
+    }
+
+    .m-menu-btn {
+        display: block;
+    }
+
+    .section01 {
+        padding: 80px 0 60px;
+    }
+
+    .section01 .container {
+        flex-wrap: wrap;
+    }
+
+    .section01 .txt-box {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section01 .txt-box h3 {
+        font-size: 28px;
+    }
+
+    .section01 .img-box {
+        width: 100%;
+    }
+
+    .section02 {
+        padding: 60px 0 40px;
+    }
+
+    .section02 .container h5 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .section02 .list-group div p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .section02 .list-group div {
+        width: calc(100% / 2 - 15px);
+    }
+
+    .section02 .list-group div:nth-child(3n) {
+        margin-right: 30px;
+    }
+
+    .section02 .list-group div:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .section03 {
+        padding: 80px 0 60px;
+    }
+
+    .section03 .container {
+        flex-wrap: wrap;
+    }
+
+    .section03 .left-box {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section03 .left-box h3 {
+        font-size: 28px;
+    }
+
+    .section03 .right-box {
+        width: 100%;
+    }
+
+    .section04 .container {
+        flex-wrap: wrap;
+    }
+
+    .section04 .left-box {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
+
+    .section04 .right-box {
+        width: 100%;
+    }
+
+    .section04 .right-box div p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media(max-width:400px) {
+
+    .section02 .list-group div {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .section02 .list-group div:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .section03 .container {
+        padding: 0;
+    }
+
+    .section04 .right-box div {
+        width: 100%;
+        margin: 0 0 40px;
+    }
+
+    .section04 .right-box div img {
+        margin: 0 auto 20px;
+    }
+
+    .section04 .right-box div p {
+        text-align: center;
+    }
+
+    .section04 .right-box div:nth-child(1),
+    .section04 .right-box div:nth-child(3) {
+        margin-right: 0;
     }
 }

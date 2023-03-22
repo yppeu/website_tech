@@ -9,6 +9,73 @@ button {
     cursor: pointer;
 }
 
+
+/*==========================
+menu
+============================*/
+
+.m-menu-btn.on .menu-trigger span:nth-of-type(1) {
+    width: 34px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(45deg);
+    animation: fadeIn .1s;
+}
+
+.m-menu-btn.on .menu-trigger span:nth-of-type(3) {
+    width: 34px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    animation: fadeIn .1s;
+}
+
+.m-menu-btn.on .menu-trigger span:nth-of-type(2) {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.m-menu-btn .menu-trigger {
+    position: relative;
+    /* transition: .3s ease-in-out; */
+    width: 30px;
+    height: 34px;
+}
+
+.m-menu-btn .menu-trigger span {
+    position: absolute;
+    height: 4px;
+    border-radius: 4px;
+    width: 100%;
+    background: #3C64B1;
+    top: 0;
+    left: 0;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4)
+}
+
+.m-menu-btn .menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.m-menu-btn .menu-trigger span:nth-of-type(2) {
+    top: 13px;
+}
+
+.m-menu-btn .menu-trigger span:nth-of-type(3) {
+    top: 26px;
+}
+
+
+
 /*==========================
 header
 ============================*/
